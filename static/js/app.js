@@ -58,7 +58,7 @@ $(function() {
         // prevent accidental video trigger on unselected carousel items
         if ($(this).parents('.carousel-item').hasClass('active')) {
           var trailerYouTubeId = $(this).attr('data-trailer-youtube-id');
-          var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+          var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
           $("#trailer-video-container").empty().append($("<iframe></iframe>", {
             'id': 'trailer-video',
             'type': 'text-html',

@@ -14,8 +14,8 @@ def get_movies_data(movie_ids):
        Compiles a list of movie instances
        which will be rendered dynamically."""
     print("Fetching movie data...")
-    poster_base = "http://image.tmdb.org/t/p/w300{picture_id}"
-    imdb_base = "http://imdb.com/title/{imdb_id}"
+    poster_base = "https://image.tmdb.org/t/p/w300{picture_id}"
+    imdb_base = "https://imdb.com/title/{imdb_id}"
     movies = []
     # Request data per API id in list
     for id in movie_ids:
