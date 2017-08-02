@@ -53,7 +53,7 @@ $(function() {
     // Start playing the video whenever the trailer modal is opened
     $('.modal-trigger').click(function (event) {
         // prevent accidental video trigger on unselected carousel items
-        if ($(this).parent('.carousel-item').hasClass('active')) {
+        if ($(this).parents('.carousel-item').hasClass('active')) {
           var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
           var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
           $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -81,6 +81,11 @@ $(function() {
     });
   }
 
+  // Loads the parallax functionality
+  function initializeParallax() {
+    $('.parallax').parallax();
+  }
+
   initializeModal();
   initializeCarousel();
   // If browser is resized, set carousel height again
@@ -88,4 +93,5 @@ $(function() {
     initializeCarousel(CAROUSEL_OPTIONS);
   });
   initializeShuffler();
+  initializeParallax();
 });

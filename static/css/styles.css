@@ -4,9 +4,12 @@ html {
 }
 
 nav .brand-logo {
-    padding-top: 1rem;
     margin-left: 1rem;
     font-size: 3.25rem;
+}
+
+.heading {
+    margin: 3rem 0;
 }
 
 .carousel {
@@ -34,7 +37,8 @@ nav .brand-logo {
     left: calc(50% - 20px);
 }
 
-.card-content {
+.card .card-content {
+    padding: 2.5rem 2.5rem 0;
     max-height: 200px;
     overflow: auto;
 }
@@ -76,6 +80,19 @@ nav .brand-logo {
     margin-bottom: 2rem;
 }
 
+.rating {
+    display: inline-block;
+    vertical-align: super;
+}
+
+.popularity-container {
+    margin: 1.5rem 0 0;
+}
+
+.votes {
+    font-size: 1.75rem;
+}
+
 .hanging-close {
     position: absolute;
     top: 0;
@@ -113,4 +130,53 @@ nav .brand-logo {
     left: 0;
     top: 0;
     background-color: white;
+}
+
+.parallax-container {
+    height: 300px;
+}
+
+.footer-text {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 5rem);
+    color: white;
+}
+
+.footer-title {
+    font-size: 2.75rem;
+}
+
+.footer-attribution {
+    font-size: 2rem;
+}
+
+.img-credit-badge {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-family: -apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img-credit-icon-span {
+    display: inline-block;
+    padding: 2px 3px;
+}
+
+.img-credit-icon-svg {
+    height: 12px;
+    width: auto;
+    position: relative;
+    vertical-align: middle;
+    top: -1px;
+    fill: white;
 }

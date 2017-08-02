@@ -44,7 +44,10 @@ def get_movies_data(movie_ids):
             movie.overview,
             video_id,
             imdb_url,
-            movie.tagline
+            movie.tagline,
+            [genre["name"] for genre in movie.genres],
+            movie.vote_average,
+            movie.vote_count
         ))
     return movies
 
@@ -62,7 +65,10 @@ def create_movie_tiles_content(movies):
             "trailer_youtube_id": movie.trailer_youtube_id,
             "movie_description": movie.description,
             "imdb_url": movie.imdb_url,
-            "tagline": movie.tagline
+            "tagline": movie.tagline,
+            "genres": movie.genres,
+            "rating": movie.rating,
+            "votes": movie.votes
         })
     return content
 

@@ -8,6 +8,9 @@ class Movie(object):
         trailer_youtube_id: the id of the link to the YouTube trailer
         imdb_url = the link to the imdb page
         tagline = the movie tagline
+        genres = a list of applicable genres
+        rating = the voting average from users
+        votes = the count of user votes
     """
 
     def __init__(
@@ -17,7 +20,10 @@ class Movie(object):
         description,
         trailer_youtube_id,
         imdb_url,
-        tagline
+        tagline,
+        genres,
+        rating,
+        votes
     ):
         """Inits Movie class with specified info"""
         self.title = title
@@ -26,3 +32,6 @@ class Movie(object):
         self.trailer_youtube_id = trailer_youtube_id
         self.imdb_url = imdb_url
         self.tagline = tagline
+        self.genres = genres
+        self.rating = rating
+        self.votes = votes
