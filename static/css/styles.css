@@ -71,6 +71,11 @@ nav .brand-logo {
     margin-top: 1.6rem;
 }
 
+.random-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .hanging-close {
     position: absolute;
     top: 0;
