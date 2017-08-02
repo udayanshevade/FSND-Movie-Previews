@@ -3,13 +3,7 @@ import os
 import re
 import tmdbsimple as tmdb
 import media
-from jinja2 import Template, Environment, PackageLoader, select_autoescape
-
-
-env = Environment(
-    loader=PackageLoader('fresh_tomatoes', 'static/templates')
-)
-
+from env import env
 
 # Specify an API_KEY for the request to work
 tmdb.API_KEY = "e82675e3ce7ac55822d324d26d627295"
@@ -82,7 +76,7 @@ def open_movies_page(movie_ids):
     movies = get_movies_data(movie_ids)
 
     # Creates or overwrites generated html
-    output_file = open('fresh_tomatoes.html', 'w')
+    output_file = open('index.html', 'w')
 
     main_page_template = env.get_template('page.html')
     trailer_modal_content = env.get_template('trailer_modal.html').render()
