@@ -1,0 +1,12 @@
+# A single movie entry html template
+trailer_modal_content = '''
+<div class="modal" id="trailer">
+  <div class="modal-content">
+    <a href="#" class="hanging-close modal-close">
+      <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+    </a>
+    <div class="scale-media" id="trailer-video-container">
+    </div>
+  </div>
+</div>
+'''
