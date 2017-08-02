@@ -20,13 +20,28 @@
         <a href="" class="brand-logo"><h1 class="page-title">sneak picks</h1></a>
       </div>
     </nav>
-    <h2 class="heading center-align">Some movies to see.</h2>
-    <div class="carousel">
-      {{movie_tiles}}
-    </div>
-    <div class="random-container">
-      <button class="btn cyan darken-2 waves-effect waves-light randomizer">shuffle</button>
-    </div>
+    <main>
+      <div class="preloader visible center-align">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-cyan-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="heading center-align grey-text text-darken-2">Some movies to see.</h2>
+      <div class="carousel">
+        {{movie_tiles}}
+      </div>
+      <div class="random-container">
+        <button class="btn cyan darken-2 waves-effect waves-light randomizer">shuffle</button>
+      </div>
+    </main>
     <div class="parallax-container">
       <div class="parallax">
         <img src="static/img/chairs.jpg">
@@ -39,6 +54,6 @@
     </div>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-    <script src="static/js/app.js"></script>
+    <script defer src="static/js/app.js"></script>
   </body>
 </html>

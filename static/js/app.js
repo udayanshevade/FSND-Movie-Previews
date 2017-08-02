@@ -1,12 +1,14 @@
 $(function() {
+  $('.preloader').removeClass('visible');
   // Default carousel display options
   var CAROUSEL_OPTIONS = {
     duration: 200,
     dist: -200,
-    shift: 50,
-    padding: 150,
+    shift: 125,
+    padding: 200,
   };
   var NUM_MOVIES = 7;
+  var oldNum = 0;
   var carouselInitialized;
 
   /**
@@ -34,6 +36,7 @@ $(function() {
     if (carouselInitialized) $('.carousel').carousel('destroy');
     // Adjust height before initializing carousel
     setCarouselHeight();
+    carouselInitialized = true;
     $('.carousel').carousel(options);
     // sample animation on load
     $('.carousel').carousel('set', Math.round($('.carousel-item').length / 2));
@@ -73,10 +76,18 @@ $(function() {
     });
   }
 
+  // Prevents consecutive duplicate numbers
+  function randomizeNumber() {
+    var newNum = Math.floor(Math.random() * NUM_MOVIES);
+    if (oldNum === newNum) return randomizeNumber();
+    oldNum = newNum;
+    return newNum;
+  }
+
   // Add click listener for randomizer button
   function initializeShuffler() {
     $('.randomizer').click(function() {
-      var newNum = Math.floor(Math.random() * NUM_MOVIES);
+      var newNum = randomizeNumber();
       $('.carousel').carousel('set', newNum);
     });
   }

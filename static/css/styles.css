@@ -8,11 +8,22 @@ nav .brand-logo {
 }
 
 .page-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    font-variant: small-caps;
+}
+
+.preloader {
+    display: none;
+}
+
+.preloader.visible {
+    display: block;
+    margin: 2rem 0;
 }
 
 .heading {
     margin: 3rem 0;
+    font-size: 3rem;
 }
 
 .carousel {
@@ -32,6 +43,30 @@ nav .brand-logo {
 
 .card .card-title {
     font-weight: bold;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.active .card .card-title {
+    transform: translateY(-3rem);
+}
+
+.card .card-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.active .card .card-image:before {
+    opacity: 0;
 }
 
 .modal-trigger {
@@ -83,13 +118,14 @@ nav .brand-logo {
     margin-bottom: 4rem;
 }
 
+.popularity-container {
+    margin: 1.5rem 0 0;
+}
+
 .rating {
     display: inline-block;
     vertical-align: super;
-}
-
-.popularity-container {
-    margin: 1.5rem 0 0;
+    padding-left: 0.5rem;
 }
 
 .votes {
@@ -136,7 +172,7 @@ nav .brand-logo {
 }
 
 .parallax-container {
-    height: 300px;
+    height: 250px;
 }
 
 .footer-text {
