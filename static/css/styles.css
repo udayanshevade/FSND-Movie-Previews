@@ -21,6 +21,10 @@ html {
     margin-top: 0;
 }
 
+.card .card-title {
+    font-weight: bold;
+}
+
 .movie-image {
     width: 300px;
     height: 450px;
