@@ -23,21 +23,24 @@ def get_movies_data(movie_ids):
     poster_base = "http://image.tmdb.org/t/p/w300{picture_id}"
     imdb_base = "http://imdb.com/title/{imdb_id}"
     movies = []
+    # Request data per API id in list
     for id in movie_ids:
         movie = tmdb.Movies(id)
         # get the details associated with the movie
         response = movie.info()
 
+        # Some context for the wait time.
         print("Getting data for {}".format(movie.title))
 
         # get poster image src
         poster_url = poster_base.format(picture_id=movie.poster_path)
 
-        # get any trailer videos
+        # make a secondary request for trailer videos
         videos = movie.videos()
         video_id = videos["results"][0]["key"]
 
         imdb_url = imdb_base.format(imdb_id=movie.imdb_id)
+
         movies.append(media.Movie(
             movie.title,
             poster_url,
@@ -74,7 +77,7 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movie_ids):
-    """Makes data request and writes data to the html"""
+    """Triggers data request and injects data into html"""
     print("Loading...")
     movies = get_movies_data(movie_ids)
 
@@ -85,9 +88,9 @@ def open_movies_page(movie_ids):
     trailer_modal_content = env.get_template('trailer_modal.html').render()
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_template.render({
-            "trailer_modal_content": trailer_modal_content,
-            "movie_tiles": create_movie_tiles_content(movies)
-        })
+        "trailer_modal_content": trailer_modal_content,
+        "movie_tiles": create_movie_tiles_content(movies)
+    })
 
     # Output the file
     output_file.write(rendered_content)

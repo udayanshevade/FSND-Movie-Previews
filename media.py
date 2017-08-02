@@ -25,7 +25,7 @@ class Movie(object):
         rating,
         votes
     ):
-        """Inits Movie class with specified info"""
+        """Inits Movie class with specified movie parameters"""
         self.title = title
         self.poster_image_url = poster_image_url
         self.description = description
