@@ -3,9 +3,10 @@ html {
     background: rgba(189, 189, 189, 0.1);
 }
 
-.brand-logo {
+nav .brand-logo {
+    padding-top: 1rem;
     margin-left: 1rem;
-    font-variant: small-caps;
+    font-size: 3.25rem;
 }
 
 .carousel {

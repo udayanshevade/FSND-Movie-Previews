@@ -9,8 +9,8 @@
             </button>
         </div>
         <div class="card-content">
-            {% if variable is defined %}
-                <h4 class="movie-tagline">{{tagline}}</h4>
+            {% if tagline %}
+                <q class="movie-tagline">{{tagline}}</q>
             {% endif %}
             <p class="movie-description flow-text">{{movie_description}}</p>
             <a class="btn cyan darken-2 more-button" href="{{imdb_url}}">
