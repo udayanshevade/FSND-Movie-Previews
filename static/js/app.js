@@ -1,7 +1,7 @@
 $(function() {
   // Default carousel display options
   var CAROUSEL_OPTIONS = {
-    duration: 225,
+    duration: 200,
     dist: -200,
     shift: 50,
     padding: 150,
@@ -41,7 +41,7 @@ $(function() {
     $('.modal').modal();
 
     // Pause the video when the modal is closed
-    $('.hanging-close, .modal-overlay, .modal').click(function (event) {
+    $('.hanging-close, .modal-overlay').click(function (event) {
         // Remove the src so the player itself gets removed, as this is the only
         // reliable way to ensure the video stops playing in IE
         $("#trailer-video-container").empty();
@@ -73,4 +73,6 @@ $(function() {
   $(document).on('resize', function() {
     initializeCarousel(CAROUSEL_OPTIONS);
   });
+  // sample animation on load
+  $('.carousel').carousel('set', Math.round($('.carousel-item').length / 2));
 });
