@@ -1,0 +1,2 @@
+tmdbsimple==1.7.0
+Jinja2==2.9.6
