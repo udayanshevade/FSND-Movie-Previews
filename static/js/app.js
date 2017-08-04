@@ -15,10 +15,12 @@ $(function() {
    * @description: Dynamically sizes the carousel slider
    * based on the height of the tallest carousel item.
    */
-  function setCarouselHeight() {
-    $('.carousel').height(function() {
+  function setCarouselHeight(type) {
+    var typeSelector = '#' + type + '-carousel';
+    var childrenSelector = typeSelector + ' ' + '.carousel-item';
+    $(typeSelector).height(function() {
       var heights = jQuery.makeArray(
-        $('.carousel-item').map(function() {
+        $(childrenSelector).map(function() {
           return $(this).height();
         })
       );
@@ -30,12 +32,21 @@ $(function() {
   }
 
   /**
+   * Sets height for multiple targets
+   */
+  function setCarouselHeights() {
+    for (i = 0, len = arguments.length; i < len; i += 1) {
+      setCarouselHeight(arguments[i]);
+    }
+  }
+
+  /**
    * @description: Starts/refreshes the carousel component
    */
-  function initializeCarousel(options) {
+  function initializeCarousels(options) {
     if (carouselInitialized) $('.carousel').carousel('destroy');
     // Adjust height before initializing carousel
-    setCarouselHeight();
+    setCarouselHeights('movies', 'shows');
     carouselInitialized = true;
     $('.carousel').carousel(options);
     // sample animation on load
@@ -85,10 +96,10 @@ $(function() {
   }
 
   // Add click listener for randomizer button
-  function initializeShuffler() {
+  function initializeShufflers() {
     $('.randomizer').click(function() {
       var newNum = randomizeNumber();
-      $('.carousel').carousel('set', newNum);
+      $(this).parent('.random-container').prev('.carousel').carousel('set', newNum);
     });
   }
 
@@ -98,11 +109,11 @@ $(function() {
   }
 
   initializeModal();
-  initializeCarousel();
+  initializeCarousels();
   // If browser is resized, set carousel height again
   $(document).on('resize', function() {
-    initializeCarousel(CAROUSEL_OPTIONS);
+    initializeCarousels(CAROUSEL_OPTIONS);
   });
-  initializeShuffler();
+  initializeShufflers();
   initializeParallax();
 });

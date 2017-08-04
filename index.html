@@ -30,7 +30,7 @@
       </div>
     </nav>
     <main>
-      <div class="preloader visible center-align">
+      <aside class="preloader visible center-align">
         <div class="preloader-wrapper big active">
           <div class="spinner-layer spinner-cyan-only">
             <div class="circle-clipper left">
@@ -42,259 +42,697 @@
             </div>
           </div>
         </div>
-      </div>
-      <h2 class="heading center-align grey-text text-darken-2">Some movies to see.</h2>
-      <div class="carousel">
-        <!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
+      </aside>
+      <article class="carousel-container">
+        <h2 class="heading center-align grey-text text-darken-2">Some movies to see.</h2>
+        <section class="carousel movies-carousel" id="movies-carousel">
+          <!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
     <div class="card hoverable">
         <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/2h00HrZs89SL3tXB4nbkiM7BKHs.jpg" alt="Movie poster">
-            <h3 class="card-title">Alien</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="097uj1HjkbM">
-                <i class="material-icons">play_arrow</i>
-            </button>
-        </div>
-        <div class="card-content">
-            <div class="genres-row">
-
-                    <span class="chip">Horror</span>
-
-                    <span class="chip">Action</span>
-
-                    <span class="chip">Thriller</span>
-
-                    <span class="chip">Science Fiction</span>
-
-            </div>
-
-                <q class="movie-tagline">In space no one can hear you scream.</q>
-
-            <p class="movie-description flow-text">During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt0078748" target="_blank">
-                more
-            </a>
-            <div class="popularity-container">
-
-                    <div class="rating-container">
-                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
-                        <h5 class="rating grey-text text-darken-3">7.8</h5>
-                    </div>
-                    <p class="votes grey-text text-darken-3">4132</p>
-
-            </div>
-        </div>
-    </div>
-</section><!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
-    <div class="card hoverable">
-        <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/nk11pvocdb5zbFhX5oq5YiLPYMo.jpg" alt="Movie poster">
-            <h3 class="card-title">Up</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="ORFWdXl_zJ4">
-                <i class="material-icons">play_arrow</i>
-            </button>
-        </div>
-        <div class="card-content">
-            <div class="genres-row">
-
-                    <span class="chip">Animation</span>
-
-                    <span class="chip">Comedy</span>
-
-                    <span class="chip">Family</span>
-
-                    <span class="chip">Adventure</span>
-
-            </div>
-
-            <p class="movie-description flow-text">Carl Fredricksen spent his entire life dreaming of exploring the globe and experiencing life to its fullest. But at age 78, life seems to have passed him by, until a twist of fate (and a persistent 8-year old Wilderness Explorer named Russell) gives him a new lease on life.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt1049413" target="_blank">
-                more
-            </a>
-            <div class="popularity-container">
-
-                    <div class="rating-container">
-                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
-                        <h5 class="rating grey-text text-darken-3">7.7</h5>
-                    </div>
-                    <p class="votes grey-text text-darken-3">6254</p>
-
-            </div>
-        </div>
-    </div>
-</section><!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
-    <div class="card hoverable">
-        <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/ylXCdC106IKiarftHkcacasaAcb.jpg" alt="Movie poster">
-            <h3 class="card-title">La La Land</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="je0aAf2f8XQ">
-                <i class="material-icons">play_arrow</i>
-            </button>
-        </div>
-        <div class="card-content">
-            <div class="genres-row">
-
-                    <span class="chip">Comedy</span>
-
-                    <span class="chip">Drama</span>
-
-                    <span class="chip">Music</span>
-
-                    <span class="chip">Romance</span>
-
-            </div>
-
-                <q class="movie-tagline">Here's to the fools who dream.</q>
-
-            <p class="movie-description flow-text">Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt3783958" target="_blank">
-                more
-            </a>
-            <div class="popularity-container">
-
-                    <div class="rating-container">
-                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
-                        <h5 class="rating grey-text text-darken-3">7.8</h5>
-                    </div>
-                    <p class="votes grey-text text-darken-3">3928</p>
-
-            </div>
-        </div>
-    </div>
-</section><!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
-    <div class="card hoverable">
-        <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/90T7b2LIrL07ndYQBmSm09yqVEH.jpg" alt="Movie poster">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/90T7b2LIrL07ndYQBmSm09yqVEH.jpg" alt="Media poster">
+            
             <h3 class="card-title">2001: A Space Odyssey</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="bAZgLxuBtbo">
-                <i class="material-icons">play_arrow</i>
-            </button>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="bAZgLxuBtbo">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
         </div>
         <div class="card-content">
             <div class="genres-row">
-
+                
                     <span class="chip">Science Fiction</span>
-
+                
                     <span class="chip">Mystery</span>
-
+                
                     <span class="chip">Adventure</span>
-
+                
             </div>
-
-                <q class="movie-tagline">An epic drama of adventure and exploration</q>
-
-            <p class="movie-description flow-text">Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt0062622" target="_blank">
+            
+                <q class="media-tagline">An epic drama of adventure and exploration</q>
+            
+            <p class="media-description flow-text">Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/62" target="_blank">
                 more
             </a>
             <div class="popularity-container">
-
+                
                     <div class="rating-container">
                         <i class="material-icons cyan-text text-lighten-3">favorite</i>
                         <h5 class="rating grey-text text-darken-3">7.8</h5>
                     </div>
-                    <p class="votes grey-text text-darken-3">2749</p>
-
+                    <p class="votes grey-text text-darken-3">2758</p>
+                
             </div>
         </div>
     </div>
 </section><!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
     <div class="card hoverable">
         <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/t0TDsqbCTgSi0AL7k4baZrOYYhi.jpg" alt="Movie poster">
-            <h3 class="card-title">Pan's Labyrinth</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="gPkMx_pfJ5w">
-                <i class="material-icons">play_arrow</i>
-            </button>
-        </div>
-        <div class="card-content">
-            <div class="genres-row">
-
-                    <span class="chip">Fantasy</span>
-
-                    <span class="chip">Drama</span>
-
-                    <span class="chip">War</span>
-
-            </div>
-
-                <q class="movie-tagline">What happens when make-believe believes it's real?</q>
-
-            <p class="movie-description flow-text">Living with her tyrannical stepfather in a new home with her pregnant mother, 10-year-old Ofelia feels alone until she explores a decaying labyrinth guarded by a mysterious faun who claims to know her destiny. If she wishes to return to her real father, Ofelia must complete three terrifying tasks.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt0457430" target="_blank">
-                more
-            </a>
-            <div class="popularity-container">
-
-                    <div class="rating-container">
-                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
-                        <h5 class="rating grey-text text-darken-3">7.6</h5>
-                    </div>
-                    <p class="votes grey-text text-darken-3">2781</p>
-
-            </div>
-        </div>
-    </div>
-</section><!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
-    <div class="card hoverable">
-        <div class="card-image">
-            <img class="movie-image" src="https://image.tmdb.org/t/p/w300/7y3eYvTsGjxPYDtSnumCLIMDkrV.jpg" alt="Movie poster">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/7y3eYvTsGjxPYDtSnumCLIMDkrV.jpg" alt="Media poster">
+            
             <h3 class="card-title">Eternal Sunshine of the Spotless Mind</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="BBeBpZ-cPLE">
-                <i class="material-icons">play_arrow</i>
-            </button>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="BBeBpZ-cPLE">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
         </div>
         <div class="card-content">
             <div class="genres-row">
-
+                
                     <span class="chip">Science Fiction</span>
-
+                
                     <span class="chip">Drama</span>
-
+                
                     <span class="chip">Romance</span>
-
+                
             </div>
-
-                <q class="movie-tagline">You can erase someone from your mind. Getting them out of your heart is another story.</q>
-
-            <p class="movie-description flow-text">Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.</p>
-            <a class="btn cyan darken-2 more-button" href="https://imdb.com/title/tt0338013" target="_blank">
+            
+                <q class="media-tagline">You can erase someone from your mind. Getting them out of your heart is another story.</q>
+            
+            <p class="media-description flow-text">Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/38" target="_blank">
                 more
             </a>
             <div class="popularity-container">
-
+                
                     <div class="rating-container">
                         <i class="material-icons cyan-text text-lighten-3">favorite</i>
                         <h5 class="rating grey-text text-darken-3">7.9</h5>
                     </div>
-                    <p class="votes grey-text text-darken-3">3334</p>
-
+                    <p class="votes grey-text text-darken-3">3340</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/nk11pvocdb5zbFhX5oq5YiLPYMo.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Up</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="ORFWdXl_zJ4">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Comedy</span>
+                
+                    <span class="chip">Family</span>
+                
+                    <span class="chip">Adventure</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Carl Fredricksen spent his entire life dreaming of exploring the globe and experiencing life to its fullest. But at age 78, life seems to have passed him by, until a twist of fate (and a persistent 8-year old Wilderness Explorer named Russell) gives him a new lease on life.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/14160" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">7.7</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">6271</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/ynXoOxmDHNQ4UAy0oU6avW71HVW.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Spirited Away</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="ByXuk9QqQkk">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Fantasy</span>
+                
+                    <span class="chip">Adventure</span>
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Family</span>
+                
+            </div>
+            
+                <q class="media-tagline">The tunnel led Chihiro to a mysterious town...</q>
+            
+            <p class="media-description flow-text">A ten year old girl who wanders away from her parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the world how it once was?</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/129" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.3</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">3488</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/ylXCdC106IKiarftHkcacasaAcb.jpg" alt="Media poster">
+            
+            <h3 class="card-title">La La Land</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="je0aAf2f8XQ">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Comedy</span>
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">Music</span>
+                
+                    <span class="chip">Romance</span>
+                
+            </div>
+            
+                <q class="media-tagline">Here's to the fools who dream.</q>
+            
+            <p class="media-description flow-text">Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/313369" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">7.8</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">3951</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/t0TDsqbCTgSi0AL7k4baZrOYYhi.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Pan's Labyrinth</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="gPkMx_pfJ5w">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Fantasy</span>
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">War</span>
+                
+            </div>
+            
+                <q class="media-tagline">What happens when make-believe believes it's real?</q>
+            
+            <p class="media-description flow-text">Living with her tyrannical stepfather in a new home with her pregnant mother, 10-year-old Ofelia feels alone until she explores a decaying labyrinth guarded by a mysterious faun who claims to know her destiny. If she wishes to return to her real father, Ofelia must complete three terrifying tasks.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/1417" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">7.6</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">2791</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/9gC88zYUBARRSThcG93MvW14sqx.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Ghost in the Shell</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="wNtgA5Xfd2s">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Action</span>
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Science Fiction</span>
+                
+            </div>
+            
+                <q class="media-tagline">It found a voice... Now it needs a body.</q>
+            
+            <p class="media-description flow-text">In the year 2029, the barriers of our world have been broken down by the net and by cybernetics, but this brings new vulnerability to humans in the form of brain-hacking. When a highly-wanted hacker known as 'The Puppetmaster' begins involving them in politics, Section 9, a group of cybernetically enhanced cops, are called in to investigate and stop the Puppetmaster.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/9323" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">7.7</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">764</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/2h00HrZs89SL3tXB4nbkiM7BKHs.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Alien</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="097uj1HjkbM">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Horror</span>
+                
+                    <span class="chip">Action</span>
+                
+                    <span class="chip">Thriller</span>
+                
+                    <span class="chip">Science Fiction</span>
+                
+            </div>
+            
+                <q class="media-tagline">In space no one can hear you scream.</q>
+            
+            <p class="media-description flow-text">During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/movie/348" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">7.8</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">4143</p>
+                
             </div>
         </div>
     </div>
 </section>
-      </div>
-      <div class="random-container">
-        <button class="btn cyan darken-2 waves-effect waves-light randomizer">shuffle</button>
-      </div>
-    </main>
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="static/img/chairs.jpg" alt="Background image of theater chairs.">
-        <a class="img-credit-badge" href="https://unsplash.com/@lloydaleveque?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Lloyd Dirks">
-          <span class="img-credit-icon-span"><svg xmlns="http://www.w3.org/2000/svg" class="img-credit-icon-svg" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span class="img-credit-icon-span">Lloyd Dirks</span></a>
-      </div>
-      <div class="footer-text center-align">
-        <h3 class="footer-attribution">Data sourced from <a class="attribution-link" href="https://www.themoviedb.org">tmdb</a>.</h3>
-      </div>
+        </section>
+        <div class="random-container">
+          <button class="btn cyan darken-2 waves-effect waves-light randomizer">shuffle</button>
+        </div>
+      </article>
+      <article class="parallax-container">
+        <header class="footer-text center-align">
+          <h3 class="footer-attribution">Data sourced from <a class="attribution-link" href="https://www.themoviedb.org">tmdb</a>.</h3>
+        </header>
+        <div class="parallax">
+          <img src="static/img/chairs.jpg" alt="Background image of theater chairs.">
+          <a class="img-credit-badge" href="https://unsplash.com/@lloydaleveque?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Lloyd Dirks">
+            <span class="img-credit-icon-span"><svg xmlns="http://www.w3.org/2000/svg" class="img-credit-icon-svg" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span class="img-credit-icon-span">Lloyd Dirks</span>
+          </a>
+        </div>
+      </article>
+      <article class="carousel-container">
+        <h2 class="heading center-align grey-text text-darken-2">Some shows to see.</h2>
+        <section class="carousel shows-carousel" id="shows-carousel">
+          <!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/wjFU9z8EfOwczRTv0FrPcv9zHME.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Cowboy Bebop</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="Aw3fN3OPk3A">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Action & Adventure</span>
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">Sci-Fi & Fantasy</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Cowboy Bebop is a 1998 Japanese anime series developed by Sunrise. It featured a production team led by director Shinichir Watanabe, screenwriter Keiko Nobumoto, character designer Toshihiro Kawamoto, mechanical designer Kimitoshi Yamane, and composer Yoko Kanno. The twenty-six episodes of the series are set in the year 2071. It follows the adventures, misadventures and tragedies of a bounty hunter crew travelling on the Bebop, their starship. Cowboy Bebop explores philosophical concepts including existentialism, existential ennui, loneliness, and the past's influence.
+
+The series premiered in Japan on TV Tokyo from April 3 until June 26, 1998, broadcasting only twelve episodes and a special due to its controversial adult-themed content. The entire twenty-six episodes of the series were later broadcast on WOWOW from October 24 until April 24, 1999. The anime was adapted into two manga series which were serialized in Kadokawa Shoten's Asuka Fantasy DX. A film was later released to theaters worldwide.
+
+Cowboy Bebop became a critical and commercial success both in Japanese and international markets (most notably in the United States), garnered several major anime and science fiction awards upon its release, and received universal praise for its style, characters, story, voice acting, animation, and soundtrack. In the years since its release, critics and reviewers, from the United States in particular, have hailed Cowboy Bebop as a masterpiece and frequently cite it as one of the greatest anime titles of all time. Credited with helping to introduce anime to a new wave of Western viewers in the early 2000s, Cowboy Bebop has also been labelled a gateway series for the medium as a whole.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/30991" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.3</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">122</p>
+                
+            </div>
+        </div>
     </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/M6O2QeuIVMDer2U3bEpm8tBOG8.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Curb Your Enthusiasm</h3>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Comedy</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/4546" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.1</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">150</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Breaking Bad</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="6OdIbPMU720">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Drama</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. Set and produced in Albuquerque, New Mexico, Breaking Bad is the story of Walter White, a struggling high school chemistry teacher who is diagnosed with inoperable lung cancer at the beginning of the series. He turns to a life of crime, producing and selling methamphetamine, in order to secure his family's financial future before he dies, teaming with his former student, Jesse Pinkman. Heavily serialized, the series is known for positioning its characters in seemingly inextricable corners and has been labeled a contemporary western by its creator.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/1396" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.2</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">1774</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/sB8V0pQtJZ17v8FLXMOcYz6045c.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Avatar: The Last Airbender</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="dHaluvrS19o">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Action</span>
+                
+                    <span class="chip">Adventure</span>
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Fantasy</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/246" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.1</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">182</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/dg7NuKDjmS6OzuNy33qt8kSkPA1.jpg" alt="Media poster">
+            
+            <h3 class="card-title">The Wire</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="uDcQbk78CSw">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">Crime</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Told from the points of view of both the Baltimore homicide and narcotics detectives and their targets, the series captures a universe in which the national war on drugs has become a permanent, self-sustaining bureaucracy, and distinctions between good and evil are routinely obliterated.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/1438" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.2</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">404</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/gwPSoYUHAKmdyVywgLpKKA4BjRr.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Game of Thrones</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="iGp_N3Ir7Do">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Sci-Fi & Fantasy</span>
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">Action & Adventure</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/1399" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.1</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">3072</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/ySPZ3pBaxj4XiMZEvTlyTEBF2Cc.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Fullmetal Alchemist: Brotherhood</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="2uq34TeWEdQ">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Action & Adventure</span>
+                
+                    <span class="chip">Animation</span>
+                
+                    <span class="chip">Drama</span>
+                
+                    <span class="chip">Mystery</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">Edward and Alphonse Elric's reckless disregard for alchemy's fundamental laws ripped half of Ed's limbs from his body and left Al's soul clinging to a cold suit of armor. To restore what was lost, the brothers scour a war-torn land for the Philosopher's Stone, a fabled relic which grants the ability to perform alchemy in impossible ways.
+
+The Elrics are not alone in their search; the corrupt State Military is also eager to harness the artifact's power. So too are the strange Homunculi and their shadowy creator. The mythical gem lures exotic alchemists from distant kingdoms, scarring some deeply enough to inspire murder. As the Elrics find their course altered by these enemies and allies, their purpose remains unchanged  and their bond unbreakable.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/31911" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.2</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">91</p>
+                
+            </div>
+        </div>
+    </div>
+</section><!-- Single movie entry html template -->
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
+    <div class="card hoverable">
+        <div class="card-image">
+            
+                <img class="media-image" src="https://image.tmdb.org/t/p/w300/sjoODnu9okN2zQi6h2ov2p7P5TT.jpg" alt="Media poster">
+            
+            <h3 class="card-title">Last Week Tonight with John Oliver</h3>
+            
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="f0X-8tSgiuA">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            
+        </div>
+        <div class="card-content">
+            <div class="genres-row">
+                
+                    <span class="chip">Talk</span>
+                
+                    <span class="chip">Comedy</span>
+                
+            </div>
+            
+            <p class="media-description flow-text">A half-hour satirical look at the week in news, politics and current events.</p>
+            <a class="btn cyan darken-2 more-button" href="https://themoviedb.org/tv/60694" target="_blank">
+                more
+            </a>
+            <div class="popularity-container">
+                
+                    <div class="rating-container">
+                        <i class="material-icons cyan-text text-lighten-3">favorite</i>
+                        <h5 class="rating grey-text text-darken-3">8.0</h5>
+                    </div>
+                    <p class="votes grey-text text-darken-3">121</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </section>
+        <div class="random-container">
+          <button class="btn cyan darken-2 waves-effect waves-light randomizer">shuffle</button>
+        </div>
+      </article>
+    </main>
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-    <script defer src="static/js/app.js"></script>
+    <script async defer src="static/js/app.js"></script>
   </body>
 </html>

@@ -1,12 +1,18 @@
 <!-- Single movie entry html template -->
-<section class="carousel-item movie-tile center-align grey-text text-darken-4">
+<section class="carousel-item media-tile center-align grey-text text-darken-4">
     <div class="card hoverable">
         <div class="card-image">
-            <img class="movie-image" src="{{poster_image_url}}" alt="Movie poster">
-            <h3 class="card-title">{{movie_title}}</h3>
-            <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="{{trailer_youtube_id}}">
-                <i class="material-icons">play_arrow</i>
-            </button>
+            {% if poster_image_url %}
+                <img class="media-image" src="{{poster_image_url}}" alt="Media poster">
+            {% else %}
+                <span class="media-image empty-backdrop"></span>
+            {% endif %}
+            <h3 class="card-title">{{title}}</h3>
+            {% if video_id %}
+                <button data-target="trailer" class="btn btn-floating btn-large cyan lighten-1 waves-effect waves-light modal-trigger" data-trailer-youtube-id="{{video_id}}">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            {% endif %}
         </div>
         <div class="card-content">
             <div class="genres-row">
@@ -15,10 +21,10 @@
                 {% endfor %}
             </div>
             {% if tagline %}
-                <q class="movie-tagline">{{tagline}}</q>
+                <q class="media-tagline">{{tagline}}</q>
             {% endif %}
-            <p class="movie-description flow-text">{{movie_description}}</p>
-            <a class="btn cyan darken-2 more-button" href="{{imdb_url}}" target="_blank">
+            <p class="media-description flow-text">{{description}}</p>
+            <a class="btn cyan darken-2 more-button" href="{{url}}" target="_blank">
                 more
             </a>
             <div class="popularity-container">
